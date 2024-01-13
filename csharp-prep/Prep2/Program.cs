@@ -9,21 +9,49 @@ class Program
         int grade = int.Parse(number);
         string letter = "";
 
-        if (grade >= 90)
+        if (grade >= 93 )
             {
                 letter = "A";
             }
-        else if (grade >= 80)
+        else if (grade < 93 && grade >= 90)
+            {
+                letter = "A-";
+            }
+        else if (grade >= 87)
+            {
+                letter = "B+";
+            }
+        else if (grade >= 83)
             {
                 letter = "B";
             }
-        else if (grade >= 70)
+        else if (grade < 83 && grade >=80) 
+            {
+                letter = "B-";
+            }
+        else if (grade >= 77)
+            {
+                letter = "C+";
+            }
+        else if (grade >= 73)
             {
                 letter = "C";
             }
-        else if (grade >= 60)
+        else if (grade < 73 && grade >= 70)
+            {
+                letter = "C-";
+            }
+        else if (grade >= 67)
+            {
+                letter = "D+";
+            }
+        else if (grade >= 63)
             {
                 letter = "D";
+            }
+        else if (grade < 63 && grade >= 60)
+            {
+                letter = "D-";
             }
         else
             {
